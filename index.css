@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 147px;
+
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.Main-Logo{
+    top: 36px;
+    left: 140px;
+    width: 296px;
+    height: 76px;
+
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+nav{
+    
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+.navbar ul li a:hover {
+    color: white; 
+}
