@@ -13,7 +13,6 @@ header{
 }
 body {
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
@@ -25,7 +24,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    margin-top: 25%;
+    margin-top: 5%;
     
 }
 .booking-content {
@@ -178,3 +177,102 @@ form input, form select {
     transform: matrix(-1, 0, 0, -1, 0, 0);
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
 }
+.aboutus{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 17%;
+}
+.about-img img{
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.aboutus-textcont{
+    flex: 1;
+}
+.aboutus-textcont h3{
+    text-align: left;
+    font: normal normal normal 23px Arial;
+    text-transform: uppercase;
+}
+.aboutus-textcont h1{
+    text-align: left;
+    font: normal normal normal 33px Arial;
+}
+.aboutus-textcont h1 span{
+    background: black;
+    color: white;
+    padding: 2px 8px;
+}
+.aboutus-textcont p{
+    font-size: 20px;
+    width: 70%;
+    margin-top: 4%;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    margin-top: 2%;
+    text-align: center;
+}
+.features-cont{
+    max-width: 20%;
+}
+.features-cont img{
+    margin-bottom: 20px;
+}
+.features-cont h3{
+    margin-bottom: 10px;
+    font: normal normal normal 31px/41px Segoe UI;
+}
+.features-cont p{
+    font: normal normal normal 15px Segoe UI;
+}
+.contact-us{
+    background: url('998Asset7.png') no-repeat center center/cover;
+    padding: 60px 0;
+    position: relative;
+}
+.contactimg_title{
+    text-align: left;
+    padding: 20px;
+    background: black;
+    display: inline-block;
+}
+.contact-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 40px;
+}
+.Addressbox{
+    display: flex;
+    gap: 40px;
+    flex: 1;
+}
+.Address_cont h3{
+    text-align: left;
+    font: normal normal normal 30px Segoe UI;
+}
+.Feedbackform{
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 400px;
+}
+
+
+
