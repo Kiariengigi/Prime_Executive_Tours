@@ -22,9 +22,9 @@
 
     <section class="booking-container">
         <div class="booking-content">
-            <h1>Experience the finer things 
-                in life</h1>
-            <p>Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.
+            <h1 style="font-size: 53px;">Experience the finer things 
+             in life</h1>
+            <p style="font-size: 29px;">Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.
                Whether you're heading to an important meeting, the airport, or a special event, 
                we ensure a seamless and luxurious travel experience.</p>
             <div class="Trip-select">
@@ -32,29 +32,40 @@
                 <button>Hourly</button>
             </div>
             <form>
-                <input type="text" placeholder="Pickup Location" required>
-                <input type="text" placeholder="Drop-off Location" required>
-                <input type="date" placeholder="15/12/25" required>
+                <div class="selectors">
+                    <input type="text" placeholder="Pickup Location" required>
+                    <input type="text" placeholder="Drop-off Location" required>
+                    <input type="date" placeholder="15/12/25" required>
+                </div>
+                
 
                 <div class="time-select">
                     <label>Pick Up Time</label>
-                    <select>
-                        <option>10:00</option>
-                        <option>11:00</option>
-                        <option>12:00</option>
-                    </select>
-                    <select>
-                        <option>AM</option>
-                        <option>PM</option>
-                    </select>
+                    <div class="time-selector">
+                        <select>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                        </select>
+                        <select>
+                            <option>AM</option>
+                            <option>PM</option>
+                        </select>
+                    </div>
+                    
                 </div>
                 <button type="submit" class="Enquire">Enquire</button>
+                
             </form>
+            <div class="fade-to-white"></div>
         </div>
         <div class="heroimg">
             <img src="Asset 3-8.png" alt="Luxury Van">
         </div>
+        
     </section>
+    
+    
     
 </body>
 </html>

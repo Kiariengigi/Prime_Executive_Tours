@@ -16,7 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 70vh;
+    max-height: 100vh;
 }
 .booking-container {
     display: flex;
@@ -81,11 +82,12 @@ form input, form select {
 }
 .time-select {
     display: flex;
-    gap: 10px;
+    gap: 19.5%;
     align-items: center;
 }
 .Enquire {
-    width: 100%;
+    position: relative;
+    width: 15%;
     background: black;
     color: white;
     font-size: 18px;
@@ -94,6 +96,7 @@ form input, form select {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    
 }
 .Enquire:hover {
     background: white;
@@ -103,7 +106,7 @@ form input, form select {
     flex: 1;
     position: absolute;
     right: 0px;
-    left: 350px;
+    left: 200px;
     bottom: 180px;
     width: 100%;
     height: 100%;
@@ -111,8 +114,8 @@ form input, form select {
 }
 
 .heroimg img {
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 110%;
     object-fit: cover;
 }
 .heroimg{
@@ -154,4 +157,24 @@ form input, form select {
 }
 .navbar ul li a:hover {
     color: white; 
+}
+.selectors{
+    width: 60%;
+}
+.time-selector select{
+    width: 100%;
+}
+.time-selector{
+    width: 30%;
+    display: flex;
+    gap: 5%;
+}
+.fade-to-white{
+    position: relative;
+    top: 15%;
+    right: 50px;
+    width: 1920px;
+    height: 201px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
 }
