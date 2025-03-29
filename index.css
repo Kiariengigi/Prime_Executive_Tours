@@ -6,12 +6,121 @@
 header{
     top: 0px;
     left: 0px;
-    width: 1920px;
+    width: 100vw;
     height: 147px;
-
-background: #000000 0% 0% no-repeat padding-box;
-opacity: 1;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
+body {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.booking-container {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25%;
+    
+}
+.booking-content {
+    flex: 1;
+    max-width: 50vw;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.8px);
+    -webkit-backdrop-filter: blur(12.8px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.booking-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+.booking-content p {
+    font-size: 16px;
+    margin: 15px 0 25px;
+    color: black;
+}
+.Trip-select {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.Trip-select button {
+    background: none;
+    border: 2px solid black;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s ease;
+}
+.Trip-select .active, .Trip-select button:hover {
+    background: black;
+    color: white;
+}
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-size: 16px;
+}
+.time-select {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Enquire {
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.Enquire:hover {
+    background: white;
+    color: black;
+}
+.heroimg {
+    flex: 1;
+    position: absolute;
+    right: 0px;
+    left: 350px;
+    bottom: 180px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.heroimg img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
+.heroimg{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .Main-Logo{
     top: 36px;
     left: 140px;
@@ -21,14 +130,17 @@ opacity: 1;
     background: transparent 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-nav{
-    
-}
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 20px 50px;
     position: fixed;
     top: 0;
-    right: 0;
-    padding: 20px;
+    width: 100%;
+    z-index: 1000;
 }
 .navbar ul li{
     display: inline;
