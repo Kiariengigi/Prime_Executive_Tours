@@ -6,6 +6,9 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     top: 0px;
     left: 0px;
@@ -180,10 +183,11 @@ form input, form select {
     gap: 5%;
 }
 .fade-to-white{
-    position: relative;
-    top: 15%;
+    position: absolute;
+    z-index: 15;
+    bottom: 0;
     right: 50px;
-    width: 100vw;
+    width: 100px;
     height: 201px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
@@ -289,7 +293,11 @@ form input, form select {
     text-align: left;
     font: normal normal normal 30px Segoe UI;
 }
-.Address_cont h3, p{
+.Address_cont h3{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.Address_cont p{
     padding-left: 40px;
     padding-top: 10px;
 }
