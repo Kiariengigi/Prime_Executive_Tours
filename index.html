@@ -11,65 +11,70 @@
         
         <nav class="navbar">
             <div class="logo">
-                <img class="Main-Logo" src="998Main-Logo.svg" alt="Main-Logo">
+                <a href="index.html" class="logo-button">
+                    <img class="Main-Logo" src="998Main-Logo.svg" alt="Main Logo">
+                </a>
             </div>
             <ul class="navlinks">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#about-img">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
 
     <section class="booking-container">
         <div class="booking-content">
-            <h1 style="font-size: 53px;">Experience the finer things 
-             in life</h1>
-            <p style="font-size: 29px;">Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.
-               Whether you're heading to an important meeting, the airport, or a special event, 
-               we ensure a seamless and luxurious travel experience.</p>
-            <div class="Trip-select">
-                <button class="active">One Way</button>
-                <button>Hourly</button>
+            <div class="booking-content1">
+                <h1 style="font-size: 53px;">Experience the finer things 
+                    in life</h1>
+                   <p  style="font-size: 29px; padding-left: 0; padding-bottom: 20px; color: white;">Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.
+                      Whether you're heading to an important meeting, the airport, or a special event, 
+                      we ensure a seamless and luxurious travel experience.</p>
+                   <div class="Trip-select">
+                       <button id="onewaybtn" class="active">One Way</button>
+                       <button id="hourlybtn">Hourly</button>
+                   </div>
+                   <form>
+                       <div class="selectors">
+                           <input type="text" placeholder="Pickup Location" required>
+                           <input type="text" placeholder="Drop-off Location" required>
+                           <input type="date" placeholder="15/12/25" required>
+                       </div>
+                       
+       
+                       <div class="time-select">
+                           <label>Pick Up Time</label>
+                           <div class="time-selector">
+                               <select>
+                                   <option>10:00</option>
+                                   <option>11:00</option>
+                                   <option>12:00</option>
+                               </select>
+                               <select>
+                                   <option>AM</option>
+                                   <option>PM</option>
+                               </select>
+                           </div>
+                           
+                       </div>
+                       <button type="submit" class="Enquire">Enquire</button>
             </div>
-            <form>
-                <div class="selectors">
-                    <input type="text" placeholder="Pickup Location" required>
-                    <input type="text" placeholder="Drop-off Location" required>
-                    <input type="date" placeholder="15/12/25" required>
-                </div>
-                
-
-                <div class="time-select">
-                    <label>Pick Up Time</label>
-                    <div class="time-selector">
-                        <select>
-                            <option>10:00</option>
-                            <option>11:00</option>
-                            <option>12:00</option>
-                        </select>
-                        <select>
-                            <option>AM</option>
-                            <option>PM</option>
-                        </select>
-                    </div>
-                    
-                </div>
-                <button type="submit" class="Enquire">Enquire</button>
+            
                 
             </form>
             <div class="fade-to-white"></div>
         </div>
-        <div class="heroimg">
+        <div  class="heroimg">
             <img src="Asset 3-8.png" alt="Luxury Van">
         </div>
         
     </section>
-    <section class="aboutus">
+    <section id="about-img" class="aboutus">
         <div class="about-container">
-            <div class="about-img">
-                <img src="man in car-8.png" alt="Man in Car">
+            <div  class="about-img">
+                <img id="about-img" src="man in car-8.png" alt="Man in Car">
             </div>
-            <div class="aboutus-textcont">
+            <div  class="aboutus-textcont">
                 <h3>About Us</h3>
                 <h1>Experience Luxury, <span>Redefined</span></h1>
                 <p>At Prime Executive Tours, we redefine luxury travel with our premium chauffeur service.
@@ -99,9 +104,26 @@
             <p>Our premium fleet of high-end vehicles guarantees comfort, elegance, and a seamless journey for every client.</p>
         </div>
     </section>
-    <section class="contact-us" style="color: white;">
+    <section id="contact-us" class="contact-us" style="color: white;">
+        
          <div class="contact-cont">
             
+            <div class="Feedbackform">
+                <h3 style="padding-bottom: 20px;">We would love to hear from you!</h3>
+                <form>
+                    <div class="details">
+                        <label>Name</label>
+                        <input type="text" placeholder="John">
+                        <label>Email</label>
+                        <input type="Email" placeholder="John@email.com">
+                        <label>Phone</label>
+                        <input type="text" placeholder="+254 7123456789">
+                        <label>Message</label>
+                        <input type="text" placeholder="Write your message here...">
+                        <button style="height: 40px; width: 100%; border: 1px solid black;" class="Enquire" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
             <div class="contactimg_title">
                 <h2>Contact Us</h2>
             </div>
@@ -116,26 +138,30 @@
                     <p>+254 784739373</p>
                     <p>+254 784259373</p>
                 </div>
-            <div class="Feedbackform">
-                <h3>We would love to hear from you!</h3>
-                <form>
-                    <div class="details">
-                        <label>Name</label>
-                        <input type="text" placeholder="John">
-                        <label>Email</label>
-                        <input type="Email" placeholder="John@email.com">
-                        <label>Phone</label>
-                        <input type="text" placeholder="+254 7123456789">
-                        <label>Message</label>
-                        <input type="text" placeholder="Write your message here...">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
+            
             
                 
             </div>
         </div>
     </section>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const oneWayBtn = document.getElementById("onewaybtn");
+        const hourlyBtn = document.getElementById("hourlybtn");
+
+        function toggleActive(clickedBtn, otherBtn) {
+            clickedBtn.classList.add("active");
+            otherBtn.classList.remove("active");
+        }
+
+        oneWayBtn.addEventListener("click", function() {
+            toggleActive(oneWayBtn, hourlyBtn);
+        });
+
+        hourlyBtn.addEventListener("click", function() {
+            toggleActive(hourlyBtn, oneWayBtn);
+        });
+    });
+</script>s
 </html>
