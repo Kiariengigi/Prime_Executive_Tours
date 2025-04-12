@@ -1,41 +1,28 @@
+let lastScrollTop = 0;
+const navLinks = document.querySelectorAll('.nav-link-toggle');
+const navbar = document.getElementById('navbar');
 
-  const nav = document.getElementById('navbar');
-  const navButtons = document.getElementById('navButtons');
-
-  let atTop = true;
-
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-
-    if (scrollTop === 0) {
-      navButtons.classList.remove('hidden');
-      atTop = true;
-    } else if (atTop) {
-      navButtons.classList.add('hidden');
-      atTop = false;
-    }
-  });
-
-  nav.addEventListener('mouseenter', () => {
-    if (!atTop) {
-      navButtons.classList.remove('hidden');
-    }
-  });
-
-  nav.addEventListener('mouseleave', () => {
-    if (!atTop) {
-      navButtons.classList.add('hidden');
-    }
-  });
-  // Add functionality to hide and show navbar
-const navbar = document.getElementById('mainNavbar');
-
-// Event listener for scrolling
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // scrolling down → hide nav links
+    navLinks.forEach(link => link.style.opacity = '0');
+  } else if (scrollTop <= 10) {
+    // back to top → show nav links
+    navLinks.forEach(link => link.style.opacity = '1');
   }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
+// Optional: show links when mouse hovers over navbar
+navbar.addEventListener('mouseenter', () => {
+  navLinks.forEach(link => link.style.opacity = '1');
+});
+navbar.addEventListener('mouseleave', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 10) {
+      navLinks.forEach(link => link.style.opacity = '0');
+    }
+  });

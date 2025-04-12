@@ -1,153 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prime Executive Tours</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Hero Section -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-    <div class="container-fluid justify-content-center">
-      <a class="navbar-brand">
-        <img src="Images/998Asset 1.png" alt="Logo" width="80" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+  <header>
+    <nav id="navbar" class="navbar bg-black position-fixed w-100 navbar-dark py-3">
+      <div class="container-fluid position-relative d-flex justify-content-center align-items-center">
+   <!-- Left links -->
+   <ul class="navbar-nav flex-row d-none d-lg-flex">
+    <li class="nav-item me-3">
+      <a id="nav-link" class="nav-link nav-link-toggle" href="#">Home</a>
+    </li>
+    <li class="nav-item me-3">
+      <a id="nav-link" class="nav-link nav-link-toggle" href="#">About</a>
+    </li>
+  </ul>
+
+  <!-- Centered logo -->
+  <a class="navbar-brand mx-auto" href="#">
+    <img src="Images/998Asset 1.png" alt="Logo" height="40">
+  </a>
+
+  <!-- Right links -->
+  <ul class="navbar-nav flex-row d-none d-lg-flex">
+    <li class="nav-item me-3">
+      <a id="nav-link" class="nav-link nav-link-toggle" href="#">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-link" class="nav-link nav-link-toggle" href="#">Login</a>
+    </li>
+  </ul>  
+        <!-- Right: Hamburger (Visible on mobile only) -->
+        <button class="navbar-toggler position-absolute end-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bottomMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  
+    <!-- Offcanvas Menu (Bottom) -->
+    <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="bottomMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Prime Executive Tours</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link text-white" href="#">Login</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  <header class="hero-section text-white text-center">
-    <div class="container d-flex align-items-center justify-content-center flex-column">
-      <h1 class="display-4">Experience the Finer Things in Life</h1>
-      <p class="lead">Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.</p>
-      <a href="#" class="btn btn-primary btn-lg mt-3">Book Now</a>
-    </div>
   </header>
+  
+</head>
+<body>
 
-  <!-- Our Philosophy Section -->
-  <section class="philosophy-section py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Our Philosophy</h2>
-      <p class="text-muted mb-5">The values in our services</p>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <i class="fas fa-clock"></i>
-          <h5>Punctuality</h5>
-          <p>We value your time and guarantee the highest level of punctuality.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-user-tie"></i>
-          <h5>Personal Chauffeurs</h5>
-          <p>Enjoy the convenience of highly skilled professional drivers at your service.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-handshake"></i>
-          <h5>Committed</h5>
-          <p>Your comfort and satisfaction are our top priorities.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-car"></i>
-          <h5>Luxury Fleet</h5>
-          <p>Travel in style with our diverse range of luxurious vehicles.</p>
-        </div>
+  <div class="hero">
+    <h1>Experience the Finer things in life.</h1>
+    <p>Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.</p>
+    <button>Book Now</button>
+  </div>
+  <section class="philosophy">
+    <h2>Our Philosophy</h2>
+    <p>The values in our services</p>
+    <div class="values">
+      <div class="value">
+        <i class="fas fa-clock"></i>
+        <h3>Punctuality</h3>
+        <p>Our chauffeurs will always get you where you need to go on time.</p>
+      </div>
+      <div class="value">
+        <i class="fas fa-user-tie"></i>
+        <h3>Personal Chauffeurs</h3>
+        <p>Enjoy the professionalism and courtesy of our trained drivers.</p>
+      </div>
+      <div class="value">
+        <i class="fas fa-handshake"></i>
+        <h3>Committed</h3>
+        <p>We stand by our commitment to excellence in all we do.</p>
+      </div>
+      <div class="value">
+        <i class="fas fa-car"></i>
+        <h3>Luxury Fleet</h3>
+        <p>Travel in style with our selection of luxury vehicles.</p>
       </div>
     </div>
   </section>
-
-  <!-- Our Locations Section -->
-  <section class="locations-section py-5 text-white text-center">
-    <div class="container">
-      <h2 class="mb-4">Our Locations</h2>
-      <p class="text-muted mb-5">More locations coming soon</p>
-      <div id="locationsCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Images/amani-nation-LTh5pGyvKAM-unsplash.jpg" class="d-block w-100" alt="Nairobi">
-            <div class="carousel-caption">
-              <h5>Nairobi</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg" class="d-block w-100" alt="Mombasa">
-            <div class="carousel-caption">
-              <h5>Mombasa</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Images/sarova2.jpg" class="d-block w-100" alt="Kisumu">
-            <div class="carousel-caption">
-              <h5>Kisumu</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Images/DSC_7843.jpg" class="d-block w-100" alt="Eldoret">
-            <div class="carousel-caption">
-              <h5>Eldoret</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#locationsCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#locationsCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <section class="locations-section">
+    <h2>Our Locations</h2>
+    <p>More locations coming soon</p>
+    <div class="locations-grid">
+      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1605009281992-df44c5f70cfa');">
+        <span>NAIROBI</span>
+      </div>
+      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1598287969374-79b68226423d');">
+        <span>MOMBASA</span>
+      </div>
+      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1615393923587-734b734f2b8b');">
+        <span>KISUMU</span>
+      </div>
+      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1630592586642-92bdf11a1982');">
+        <span>ELDORET</span>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer-section text-white py-4">
-    <div class="container text-center">
-      <h5>Prime Executive Tours</h5>
+  <footer>
+    <div class="column brand">
+      <p>Prime Executive Tours</p>
       <p>Luxury Awaits</p>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Locations</a></li>
-            <li><a href="#" class="text-white">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-unstyled">
-            <li>Nairobi</li>
-            <li>Mombasa</li>
-            <li>Kisumu</li>
-            <li>Eldoret</li>
-          </ul>
-        </div>
-      </div>
-      <p>&copy; 2023 Prime Executive Tours</p>
+      <p>&copy; 2025 Prime Executive Tours</p>
+    </div>
+    <div class="column">
+      <p><strong>Links</strong></p>
+      <a href="#">About Us</a>
+      <a href="#">Locations</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="column">
+      <p><strong>Locations</strong></p>
+      <a href="#">Nairobi</a>
+      <a href="#">Mombasa</a>
+      <a href="#">Eldoret</a>
+    </div>
+    <div class="column socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
