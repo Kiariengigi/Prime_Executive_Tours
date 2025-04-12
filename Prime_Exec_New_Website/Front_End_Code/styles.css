@@ -20,8 +20,19 @@ header img {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 6rem 2rem;
-  text-align: center;
+  padding: 20rem 5rem;
+  text-align: left;
+}
+@media (max-width: 579px) {
+  .hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem 15rem 1rem;
+    color: #000;
+  }
+  
 }
 .hero h1 {
   font-size: 2rem;
@@ -39,6 +50,9 @@ header img {
   border: none;
   border-radius: 999px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 section.philosophy {
   text-align: center;
