@@ -37,6 +37,7 @@ header img {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
 }
 .hero p {
   font-size: 1.2rem;
@@ -59,12 +60,16 @@ section.philosophy {
   padding: 4rem 2rem;
 }
 .philosophy h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.philosophy fas{
+  width: 10px;
 }
 .philosophy p {
   color: #888;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 .values {
   display: flex;
@@ -81,43 +86,64 @@ section.philosophy {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.locations-section {
-  background-color: #000;
-  color: white;
-  padding: 4rem 2rem;
-  border-radius: 3rem 3rem 0 0;
-  text-align: center;
-}
-.locations-section h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-.locations-grid {
-  margin-top: 2rem;
+.location-cards  {
   display: flex;
-  overflow-x: auto;
-  gap: 1rem;
+  flex-wrap: nowrap;
   justify-content: center;
-  padding-bottom: 1rem;
+  align-items: stretch;
+  transition: all 0.3s ease;
 }
+
 .location-card {
-  flex: 0 0 auto;
-  width: 180px;
-  height: 240px;
+  flex: 1;
+  aspect-ratio: 16 / 9;
   border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
   background-size: cover;
   background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.4s ease, transform 0.3s ease;
+  min-width: 100px;
+  max-width: 40%;
+  height: 30rem;
 }
-.location-card span {
+
+
+
+.location-card .label {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem;
-  text-align: center;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
+
+.location-card .icon-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Featured (Nairobi) default size */
+.location-card.featured {
+  flex: 2;
+}
+
+/* Hover behavior: shrink others and grow hovered */
+.location-cards:hover .location-card {
+  flex: 1;
+}
+
+.location-card:hover {
+  flex: 2 !important;
+  z-index: 2;
+}
+
+
 footer {
   background: #f1f1f1;
   padding: 2rem;

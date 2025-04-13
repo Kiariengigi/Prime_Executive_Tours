@@ -101,24 +101,81 @@
       </div>
     </div>
   </section>
-  <section class="locations-section">
-    <h2>Our Locations</h2>
-    <p>More locations coming soon</p>
-    <div class="locations-grid">
-      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1605009281992-df44c5f70cfa');">
-        <span>NAIROBI</span>
+  <div class="container-fluid bg-black text-white text-center py-5">
+    <h2 class="fw-bold">Our Locations</h2>
+    <p class="text-light">More locations coming soon</p>
+  
+    <div class="d-flex overflow-auto px-3 gap-3 mt-3 d-lg-none">
+      <!-- Repeat card layout -->
+      <div class="flex-shrink-0" style="width: 250px;">
+        <div class="card bg-dark text-white" style="border-radius: 12px; overflow: hidden;">
+          <img src="Images/amani-nation-LTh5pGyvKAM-unsplash.jpg" class="card-img" alt="Nairobi">
+          <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <h5 class="card-title">NAIROBI</h5>
+            <a href="#" style="text-decoration: none;" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1598287969374-79b68226423d');">
-        <span>MOMBASA</span>
+      <!-- Add other cards here... -->
+      <div class="flex-shrink-0" style="width: 250px; height: 169px;">
+        <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
+          <img style="filter: grayscale(100%);" src="Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg" class="card-img h-100 object-fit-cover" alt="..." />
+          <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <h6 class="card-title">Mombasa (Coming Soon)</h6>
+            <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
+          </div>
+        </div>
       </div>
-      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1615393923587-734b734f2b8b');">
-        <span>KISUMU</span>
+      
+      <div class="flex-shrink-0" style="width: 250px; height: 169px;">
+        <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
+          <img style="filter: grayscale(100%);" src="Images/sarova2.jpg" class="card-img h-100 object-fit-cover" alt="..." />
+          <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <h6 class="card-title">Kisumu (Coming Soon)</h6>
+            <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
+          </div>
+        </div>
       </div>
-      <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1630592586642-92bdf11a1982');">
-        <span>ELDORET</span>
+      <div class="flex-shrink-0" style="width: 250px;">
+        <div class="card bg-dark text-white" style="border-radius: 12px; overflow: hidden;">
+          <img style="filter: grayscale(100%);" src="Images/DSC_7843.jpg" class="card-img" alt="Nairobi">
+          <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <h6 class="card-title">Eldoret (Coming Soon)</h6>
+            <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+  
+  <!-- Desktop Layout locations-->
+  <div class="locations-section text-white text-center bg-black">
+  
+    <div class=" d-none d-lg-flex  d-flex location-cards bg-black gap-3 p-lg-5">
+      <!-- Nairobi Card (default large) -->
+      <div class="location-card featured flex-grow-2" style="background-image: url('Images/amani-nation-LTh5pGyvKAM-unsplash.jpg');">
+        <div class="label">NAIROBI</div>
+        <a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>
+      </div>
+  
+      <!-- Other City Cards -->
+      <div class="location-card" style="background-image: url('Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg'); filter: grayscale(100%); ">
+        <div class="label">MOMBASA (Coming Soon)</div>
+        <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
+      </div>
+  
+      <div class="location-card" style="background-image: url('Images/sarova2.jpg'); filter: grayscale(100%);">
+        <div class="label">KISUMU (Coming Soon)</div>
+        <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
+      </div>
+  
+      <div class="location-card" style="background-image: url('Images/DSC_7843.jpg'); filter: grayscale(100%);">
+        <div class="label">ELDORET (Coming Soon)</div>
+        <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
+      </div>
+    </div>
+  </div>
+  
   <footer>
     <div class="column brand">
       <p>Prime Executive Tours</p>
