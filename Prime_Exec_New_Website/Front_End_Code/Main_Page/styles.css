@@ -181,3 +181,8 @@ footer a {
 .nav-link-toggle{
   transition: opacity 0.3s ease;
 }
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+

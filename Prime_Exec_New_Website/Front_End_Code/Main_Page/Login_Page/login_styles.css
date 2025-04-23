@@ -1,0 +1,91 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      transition: opacity 0.5s ease;
+    }
+    body.loaded{
+      opacity: 1;
+    }
+    body.fade-out{
+      opacity: 0;
+    }
+
+    .left {
+        background: url('Images/wei-zeng-7e5ri3IV5n4-unsplash.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        margin: 20px; /* Add space around the image section */
+        border-radius: 12px; /* Rounded corners for style */
+        overflow: hidden; /* So corners are clipped properly */
+        position: relative;
+        height: calc(100% - 40px); /* Full height minus top & bottom margin */
+      }
+      
+
+    .left-content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .left-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .form-section {
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .social-btn img {
+      width: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .create_acc{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-weight: 500;
+      transition: 0.5s ease;
+    }
+    .create_acc:hover{
+      background: #77B254;
+      color: white;
+    }
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    

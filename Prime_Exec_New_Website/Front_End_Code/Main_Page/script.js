@@ -26,4 +26,19 @@ navbar.addEventListener('mouseleave', () => {
       navLinks.forEach(link => link.style.opacity = '0');
     }
   });
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      // Only apply to internal links
+      if (href && href !== "#" && !href.startsWith("http")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Match transition duration
+      }
+    });
+  });
+
 
