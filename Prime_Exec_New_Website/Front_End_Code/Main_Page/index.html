@@ -7,9 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <header>
-    <nav id="navbar" class="navbar bg-black position-fixed w-100 navbar-dark py-3">
+    <nav id="navbar" class="navbar bg-black position-fixed w-100 navbar-dark py-3 z-3">
       <div class="container-fluid position-relative d-flex justify-content-center align-items-center">
    <!-- Left links -->
    <ul class="navbar-nav flex-row d-none d-lg-flex ps-5">
@@ -68,17 +69,17 @@
 <body>
 
   <div class="hero">
-    <h1>Experience the Finer things in life.</h1>
-    <p>Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.</p>
-    <a style="text-decoration: none;" href="#">
+    <h1   data-aos="fade-up" data-aos-delay="600">Experience the Finer things in life.</h1>
+    <p   data-aos="fade-up" data-aos-delay="900">Enjoy premium, chauffeur-driven rides with comfort, style, and reliability.</p>
+    <a   data-aos="fade-up" data-aos-delay="1200" style="text-decoration: none;" href="#">
       <button id="about_1">Book Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
     </a>
     
   </div>
-  <section class="philosophy" >
-    <h2>Our Philosophy</h2>
-    <p>The values in our services</p>
-    <div class="values">
+  <section class="philosophy" data-aos="fade-up" data-aos-delay="500" >
+    <h2 data-aos="fade-up" data-aos-delay="300">Our Philosophy</h2>
+    <p data-aos="fade-up" data-aos-delay="200">The values in our services</p>
+    <div class="values" data-aos="fade-up" data-aos-delay="800">
       <div class="value">
         <i class="fas fa-clock"></i>
         <h3>Punctuality</h3>
@@ -105,7 +106,7 @@
     <h2 class="fw-bold">Our Locations</h2>
     <p class="text-light">More locations coming soon</p>
   
-    <div class="d-flex overflow-auto px-3 gap-3 mt-3 d-lg-none">
+    <div class="d-flex overflow-auto pb-4 px-3 gap-3 mt-3 d-lg-none">
       <!-- Repeat card layout -->
       <div class="flex-shrink-0" style="width: 250px;">
         <div class="card bg-dark text-white" style="border-radius: 12px; overflow: hidden;">
@@ -119,7 +120,7 @@
       <!-- Add other cards here... -->
       <div class="flex-shrink-0" style="width: 250px; height: 169px;">
         <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
-          <img style="filter: grayscale(100%);" src="Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg" class="card-img h-100 object-fit-cover" alt="..." />
+          <img style=" filter: brightness(40%) grayscale(100%);" src="Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg" class="card-img h-100 object-fit-cover" alt="..." />
           <div class="card-img-overlay d-flex flex-column justify-content-between">
             <h6 class="card-title">Mombasa (Coming Soon)</h6>
             <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
@@ -129,7 +130,7 @@
       
       <div class="flex-shrink-0" style="width: 250px; height: 169px;">
         <div class="card bg-dark text-white h-100" style="border-radius: 12px; overflow: hidden;">
-          <img style="filter: grayscale(100%);" src="Images/sarova2.jpg" class="card-img h-100 object-fit-cover" alt="..." />
+          <img style=" filter: brightness(40%) grayscale(100%);" src="Images/sarova2.jpg" class="card-img h-100 object-fit-cover" alt="..." />
           <div class="card-img-overlay d-flex flex-column justify-content-between">
             <h6 class="card-title">Kisumu (Coming Soon)</h6>
             <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
@@ -138,7 +139,7 @@
       </div>
       <div class="flex-shrink-0" style="width: 250px;">
         <div class="card bg-dark text-white" style="border-radius: 12px; overflow: hidden;">
-          <img style="filter: grayscale(100%);" src="Images/DSC_7843.jpg" class="card-img" alt="Nairobi">
+          <img style="filter: brightness(40%) grayscale(100%);" src="Images/DSC_7843.jpg" class="card-img" alt="Nairobi">
           <div class="card-img-overlay d-flex flex-column justify-content-between">
             <h6 class="card-title">Eldoret (Coming Soon)</h6>
             <!--<a href="#" class="icon-link"><i class="fa-solid fa-square-arrow-up-right fa-2x text-white"></i></a>-->
@@ -149,9 +150,9 @@
   </div>
   
   <!-- Desktop Layout locations-->
-  <div class="locations-section text-white text-center bg-black">
+  <div class="locations-section text-white text-center">
   
-    <div class=" d-none d-lg-flex  d-flex location-cards bg-black gap-3 p-lg-5">
+    <div class=" d-none d-lg-flex  d-flex location-cards bg-black gap-3 pb-lg-5 pe-lg-5 ps-lg-5">
       <!-- Nairobi Card (default large) -->
       <div class="location-card featured flex-grow-2" style="background-image: url('Images/amani-nation-LTh5pGyvKAM-unsplash.jpg');">
         <div class="label">NAIROBI</div>
@@ -159,47 +160,106 @@
       </div>
   
       <!-- Other City Cards -->
-      <div class="location-card" style="background-image: url('Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg'); filter: grayscale(100%); ">
+      <div class="location-card" style="background-image: url('Images/harshil-gudka-77zGnfU_SFU-unsplash.jpg');  filter: brightness(40%) grayscale(100%);">
         <div class="label">MOMBASA (Coming Soon)</div>
         <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
       </div>
   
-      <div class="location-card" style="background-image: url('Images/sarova2.jpg'); filter: grayscale(100%);">
+      <div class="location-card" style="background-image: url('Images/sarova2.jpg');  filter: brightness(40%) grayscale(100%);">
         <div class="label">KISUMU (Coming Soon)</div>
         <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
       </div>
   
-      <div class="location-card" style="background-image: url('Images/DSC_7843.jpg'); filter: grayscale(100%);">
+      <div class="location-card" style="background-image: url('Images/DSC_7843.jpg'); filter: brightness(40%) grayscale(100%);">
         <div class="label">ELDORET (Coming Soon)</div>
         <!--<a href="#" class="icon-link" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-square-arrow-up-right fa-3x"></i></a>-->
       </div>
     </div>
   </div>
   
-  <footer>
-    <div class="column brand">
-      <p>Prime Executive Tours</p>
-      <p>Luxury Awaits</p>
-      <p>&copy; 2025 Prime Executive Tours</p>
-    </div>
-    <div class="column">
-      <p><strong>Links</strong></p>
-      <a href="#">About Us</a>
-      <a href="#">Locations</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <div class="column">
-      <p><strong>Locations</strong></p>
-      <a href="#">Nairobi</a>
-      <a href="#">Mombasa</a>
-      <a href="#">Eldoret</a>
-    </div>
-    <div class="column socials">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a id="contact_1" href="#"><i class="fab fa-facebook"></i></a>
+  <footer class="bg-dark text-white pt-4 pb-2 px-4 m-4 rounded-top-4 rounded-bottom-4 d-none d-lg-block">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Brand -->
+        <div class="col-md-4 mb-3">
+          <h5>Prime Executive Tours</h5>
+          <small>Luxury Awaits</small>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Location</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Locations -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Locations</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Nairobi</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Mombasa</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Eldoret</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr class="border-secondary my-2" />
+  
+      <!-- Bottom Footer -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <small>Copyright © 2025 Prime Executive Tours</small>
+        <div class="mt-2 mt-md-0 d-flex align-items-center">
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+        </div>
+      </div>
     </div>
   </footer>
+  <!-- Mobile Footer -->
+<footer class="bg-dark text-white p-3 d-block d-lg-none">
+  <div class="text-center mb-2">
+    <strong>Prime Executive Tours</strong><br>
+    <small>Luxury Awaits</small>
+  </div>
+
+  <div class="d-flex justify-content-around mb-2">
+    <div>
+      <strong>Links</strong>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Location</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Locations</strong>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white text-decoration-none">Nairobi</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Mombasa</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Eldoret</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center gap-3">
+    <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+  </div>
+
+  <p class="text-center mt-3 mb-0"><small>&copy; 2025 Prime Executive Tours</small></p>
+</footer>
+
+  
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

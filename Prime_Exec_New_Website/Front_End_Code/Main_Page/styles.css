@@ -23,6 +23,7 @@ header img {
   padding: 20rem 5rem;
   text-align: left;
 }
+
 @media (max-width: 579px) {
   .hero{
     display: flex;
@@ -33,6 +34,9 @@ header img {
     color: #000;
   }
   
+}
+h5{
+  font-family: "DM Serif Display", serif;
 }
 .hero h1 {
   font-size: 2rem;

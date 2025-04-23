@@ -26,3 +26,4 @@ navbar.addEventListener('mouseleave', () => {
       navLinks.forEach(link => link.style.opacity = '0');
     }
   });
+
