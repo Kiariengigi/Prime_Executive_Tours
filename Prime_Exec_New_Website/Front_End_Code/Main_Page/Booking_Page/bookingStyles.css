@@ -1,0 +1,133 @@
+.navbar{
+    top: 0;
+  }
+  header img {
+    height: 40px;
+  }
+  body {
+    background-color: #f8f9fa;
+  }
+  .stepper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .step {
+    position: relative;
+    z-index: 2; /* ensures it's above the line */
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    flex: 1;
+    padding-top: 60px;
+    top: 50%;
+    color: #999;
+  }
+  
+  .step.active {
+    color: #000;
+  }
+  
+  .step.active::before {
+    background-color: #000;
+    border-color: white;
+  }
+  
+  .step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 2;
+  }
+  
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    height: 2px;
+    background-color: black;
+    z-index: 0;
+    transform: translateY(-50%);
+    transform-origin: left;
+    transition: width 1s ease;
+    width: 0%;
+  }
+
+  .feature-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 100%;
+  }
+
+  .feature-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .feature-box ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+  }
+
+  .note-box ul li::before {
+    content: "ℹ️";
+    margin-right: 8px;
+  }
+
+  .booking-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+
+  .continue_btn{
+    position: fixed;
+    border: 1px #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: white;
+    width: 100vw;
+    left: 0;
+    height: 5.5rem;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .continue_btn button {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    background-size: 200% 200%;
+    background-position: left center;
+    color: white;
+    transition: background-position 0.5s ease;
+  }
+  
+  .continue_btn button:hover {
+    background-position: right center;
+    color: white;
+  }
+
+  .form-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-icon input, .form-icon select {
+    flex-grow: 1;
+  }
+  
