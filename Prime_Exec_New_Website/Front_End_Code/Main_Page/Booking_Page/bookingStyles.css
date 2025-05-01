@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 .navbar{
     top: 0;
   }
@@ -130,4 +134,12 @@
   .form-icon input, .form-icon select {
     flex-grow: 1;
   }
-  
+  .vehicle.selected{
+    background-color: #E8FCFC;
+  }
+  .vehicle{
+    transition: background-color 500ms ease;
+  }
+  .vehicle:hover{
+    background-color: #E8FCFC;
+  }
