@@ -98,6 +98,7 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     padding: 20px;
   }
+  
 
   .continue_btn{
     position: fixed;
@@ -138,8 +139,59 @@
     background-color: #E8FCFC;
   }
   .vehicle{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 5px;
     transition: background-color 500ms ease;
   }
   .vehicle:hover{
     background-color: #E8FCFC;
   }
+  .payment-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 90rem;
+  }
+  .payment-box1 {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 90rem;
+  }
+
+  .payment-option {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    height: 50px;
+  }
+
+  .payment-option img {
+    max-height: 24px;
+    object-fit: contain;
+  }
+
+  .payment-option.text-option {
+    font-weight: 600;
+    color: #333;
+  }
+  .step-content {
+    display: none;
+  }
+  .step-content:not(.d-none) {
+    display: block;
+  }
+  
+  
