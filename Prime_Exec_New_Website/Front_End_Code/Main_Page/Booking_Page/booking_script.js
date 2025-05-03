@@ -49,8 +49,8 @@ nextBtn.addEventListener('click', () => {
     showStep(currentStep);
     updateLine();
   } else {
-    alert("Booking Complete!");
     // Optional: submit form or redirect here
+    window.open('payment_success.html', '_self')
   }
 });
 
